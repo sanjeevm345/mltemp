@@ -90,16 +90,6 @@ do `pip install https://github.com/name/repo/tarball/{TAG|REVISON|COMMIT}`
 
 People automating CI for your project will be grateful for having a setup.py file
 
-### Why isn't this template made as a cookiecutter template?
-
-I really like [cookiecutter](https://github.com/cookiecutter/cookiecutter) and it is a great way to create new projects,
-but for this template I wanted to use the Github `Use this template` button,
-to use this template doesn't require to install extra tooling such as cookiecutter.
-
-Just click on [Use this template](https://github.com/rochacbruno/python-project-template/generate) and you are good to go.
-
-The substituions are done using github actions and a simple sed script.
-
 ### Why `VERSION` is kept in a static plain text file?
 
 I used to have my version inside my main module in a `__version__` variable, then
@@ -156,13 +146,8 @@ I wanted to provide a simple template for a CLI application on the project main 
 click and typer are great alternatives but are external dependencies and this template
 doesn't add dependencies besides those used for development.
 
-### Why this doesn't provide a full example of application using Flask or Django?
+### Utilities: Makefile
 
-as I said before, I want it to be simple and multipurpose, so I decided to not include
-external dependencies and programming design decisions.
-
-It is up to you to decide if you want to use Flask or Django and to create your application
-the way you think is best.
 
 This template provides utilities in the Makefile to make it easier to you can run:
 
